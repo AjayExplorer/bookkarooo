@@ -219,3 +219,44 @@ class StudentPanel extends JFrame {
         });
     }
 }
+
+// database code
+
+// CREATE DATABASE IF NOT EXISTS canteen_db;
+// -- USE canteen_db;
+
+// -- -- User accounts
+// -- CREATE TABLE users (
+// --     id INT AUTO_INCREMENT PRIMARY KEY,
+// --     username VARCHAR(50) UNIQUE,
+// --     password VARCHAR(50),
+// --     role ENUM('Admin', 'Student')
+// -- );
+
+// -- -- Meal count table
+// -- CREATE TABLE meal_info (
+// --     id INT PRIMARY KEY DEFAULT 1,
+// --     total_meals INT
+// -- );
+// -- INSERT IGNORE INTO meal_info(id, total_meals) VALUES (1, 0);
+
+// -- -- Menu table
+// -- CREATE TABLE menu (
+// --     id INT AUTO_INCREMENT PRIMARY KEY,
+// --     item VARCHAR(100),
+// --     price DOUBLE,
+// --     timing VARCHAR(50)
+// -- );
+
+// -- -- Booking table
+// -- CREATE TABLE bookings (
+// --     id INT AUTO_INCREMENT PRIMARY KEY,
+// --     student VARCHAR(50),
+// --     special_request TEXT
+// -- );
+
+// -- -- Sample user data
+// -- INSERT INTO users (username, password, role) VALUES
+// -- ('admin', 'admin123', 'Admin'),
+// -- ('student1', 'stud123', 'Student');
+
